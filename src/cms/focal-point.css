@@ -1,0 +1,168 @@
+/* Shared native Sveltia media focus picker. BEM without a framework. */
+
+.focal-point__picker {
+  display: grid;
+  gap: 8px;
+}
+
+.focal-point__frame {
+  position: relative;
+  max-width: 640px;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border: 1px solid rgba(0 0 0 / 20%);
+  border-radius: 6px;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.focal-point__frame:focus-visible {
+  outline: 2px solid #4a90d9;
+  outline-offset: 2px;
+}
+
+.focal-point__frame--active {
+  cursor: pointer;
+}
+
+.focal-point__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+}
+
+.focal-point__meta {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(0 0 0 / 60%);
+  color: #fff;
+  font-size: 12px;
+}
+
+.focal-point__marker {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(0 0 0 / 60%), inset 0 0 0 2px rgba(0 0 0 / 60%);
+  pointer-events: none;
+}
+
+.focal-point__marker::before,
+.focal-point__marker::after {
+  content: '';
+  position: absolute;
+  background: #fff;
+}
+
+.focal-point__marker::before {
+  top: 50%;
+  left: -8px;
+  width: 32px;
+  height: 1px;
+  transform: translateY(-50%);
+}
+
+.focal-point__marker::after {
+  top: -8px;
+  left: 50%;
+  width: 1px;
+  height: 32px;
+  transform: translateX(-50%);
+}
+
+.focal-point__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.focal-point__button {
+  padding: 4px 12px;
+  border: 1px solid rgba(0 0 0 / 25%);
+  border-radius: 6px;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.focal-point__button--remove {
+  border-color: #b23b3b;
+  color: #b23b3b;
+}
+
+.focal-point__button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.focal-point__axis {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.focal-point__axis-label {
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+.focal-point__axis-input {
+  width: 4.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.focal-point__crops {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.focal-point__crop {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+}
+
+.focal-point__crop-frame {
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(0 0 0 / 20%);
+  border-radius: 4px;
+}
+
+.focal-point__crop-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.focal-point__crop-caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.focal-point__crop-height {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.focal-point__crop-input {
+  width: 5.5em;
+  padding: 1px 4px;
+  border: 1px solid rgba(0 0 0 / 25%);
+  border-radius: 4px;
+  font: inherit;
+  font-size: 12px;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@jehu/media-focus-core",
+  "version": "0.1.0",
+  "description": "Generische Bildfokus-Logik: Manifest, Pfadauflösung, Crop-Geometrie, CMS-Picker und Browser-Laufzeit für Astro-Websites mit Sveltia CMS.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "pnpm@10.12.4",
+  "scripts": {
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "yaml": "2.9.1"
+  },
+  "devDependencies": {
+    "@astrojs/markdown-satteri": "^0.3.8",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.9.3"
+  }
+}
