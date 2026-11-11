@@ -53,6 +53,12 @@ pnpm install
 pnpm test
 ```
 
+Releases: `npm version <patch|minor|major>` → `git push --follow-tags` →
+GitHub-Release anlegen. Der Workflow `.github/workflows/publish.yml`
+veröffentlicht via npm Trusted Publishing (OIDC, kein Token/Secret) auf
+registry.npmjs.org; Provenance erfordert ein öffentliches Repo. Kein
+manuelles `npm publish`, kein `NPM_TOKEN`.
+
 ## Child DOX Index
 
 (keine Kinder)

@@ -98,6 +98,22 @@ pnpm test
 übernommenen Suites des Ursprungsrepos (Manifest, Pfade, Geometrie, Assets,
 Build, Markdown).
 
+## Veröffentlichen
+
+Releases werden automatisch über GitHub Actions veröffentlicht (npm Trusted
+Publishing/OIDC — kein Token, kein Secret; `publishConfig` setzt öffentlichen
+Zugriff auf registry.npmjs.org). Ablauf:
+
+```bash
+npm version patch   # oder minor/major
+git push --follow-tags
+gh release create v<x.y.z> -t "v<x.y.z>" -n "…" -R Jehu/sveltia-media-focus-core
+```
+
+Der Workflow (`.github/workflows/publish.yml`) läuft Tests und veröffentlicht
+mit Provenance-Attestation; dafür muss das Repository öffentlich bleiben.
+Registry-Propagation kann einige Minuten dauern.
+
 ## Lizenz
 
 MIT — siehe [LICENSE](LICENSE).
