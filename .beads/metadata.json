@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "media_focus_core",
+  "project_id": "4c96c837-f384-46ce-8b96-405286e665ea"
+}
