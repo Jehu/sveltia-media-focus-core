@@ -1,5 +1,5 @@
 {
-  "name": "@jehu/sveltia-media-focus-core",
+  "name": "@michelyweb/sveltia-media-focus-core",
   "version": "0.2.0",
   "description": "Generische Bildfokus-Logik: Manifest, Pfadauflösung, Crop-Geometrie, CMS-Picker und Browser-Laufzeit für Astro-Websites mit Sveltia CMS.",
   "type": "module",

@@ -1,4 +1,4 @@
-# @jehu/sveltia-media-focus-core
+# @michelyweb/sveltia-media-focus-core
 
 Generische Bildfokus-Logik für Astro-Websites mit Sveltia CMS: ein zentraler
 Fokuspunkt pro Originalbild, gepflegt in der CMS-Mediathek, wirksam in allen
@@ -10,10 +10,10 @@ integration inkl. Sveltia-Quellpatch.
 ## Installation
 
 ```bash
-pnpm add @jehu/sveltia-media-focus-core
+pnpm add @michelyweb/sveltia-media-focus-core
 ```
 
-Öffentlich auf [npmjs.org](https://www.npmjs.com/package/@jehu/sveltia-media-focus-core);
+Öffentlich auf [npmjs.org](https://www.npmjs.com/package/@michelyweb/sveltia-media-focus-core);
 Imports wie gewohnt über die Modulpfade unten (Exports-Map `./* → ./src/*`).
 
 ## Module

@@ -4,7 +4,7 @@ Verbindliche Regeln für alle Coding-Agenten in diesem Repository.
 
 ## Purpose
 
-`@jehu/sveltia-media-focus-core` hält die generische Bildfokus-Logik der
+`@michelyweb/sveltia-media-focus-core` hält die generische Bildfokus-Logik der
 aesthetic-&-soul-Website: zentrales Fokus-Manifest, Originalpfad-Auflösung,
 Cover-Crop-Geometrie, der Sveltia-CMS-Picker (React über `CMS.React`) sowie
 die Browser-Laufzeit für responsive Ausschnitte. Das Paket wird in neue
